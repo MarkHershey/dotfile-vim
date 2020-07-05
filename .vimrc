@@ -82,6 +82,10 @@ let mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Switch vim tab with ctrl left/right arrow
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
 """""""""""""""""""" Shortcuts """""""""""""""""""""""""""""""""""""""""""""""""
 
 " :W sudo saves the file
