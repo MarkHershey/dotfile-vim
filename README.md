@@ -15,6 +15,13 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 2. Launch `vim` and run `:PluginInstall`
 
+3. Build `YouCompleteMe`:
+    ```bash
+    sudo apt install build-essential cmake vim python3-dev
+    cd ~/.vim/bundle/YouCompleteMe
+    python3 install.py --all
+    ```
+
 ### Included Vim Plugin
 
 - [vim-airline / vim-airline](https://github.com/vim-airline/vim-airline)

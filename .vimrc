@@ -1,3 +1,5 @@
+"""""""""""""""""""" Vundle Section """"""""""""""""""""""""""""""""""""""""""""
+
 set nocompatible              " required
 filetype off                  " required
 
@@ -5,12 +7,11 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
 " let Vundle manage Vundle, required
 " https://github.com/VundleVim/Vundle.vim
 Plugin 'VundleVim/Vundle.vim'
 
-" ############## Vundle Plugin Section Start ##########################
+" ########## Vundle Plugin Section START ##########
 
 " status line at the bottom of each vim window
 " https://github.com/vim-airline/vim-airline
@@ -30,33 +31,28 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'python-mode/python-mode'
 
 
-
-
-" ############## Vundle Plugin Section END ############################
+" ########## Vundle Plugin Section END ##########
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"""""""""""""""""""" General """""""""""""""""""""""""""""""""""""""""""""""""""
 
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable startup message
+set shortmess+=I
+
+" Show line numbers
+set nu
+
+" Show relative line numbers
+set rnu
+
 " Sets how many lines of history VIM has to remember
 set history=1000
 
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime
-
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = ","
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
@@ -67,8 +63,27 @@ set smartcase
 " Highlight search results
 set hlsearch
 
-set shortmess+=I " disable startup message
-set nu " number lines
-set rnu " relative line numbering
-set incsearch " incremental search (as string is being typed)
-set hls " highlight search
+" Incremental search (as string is being typed)
+set incsearch
+
+" Highlight search
+set hls
+
+
+"""""""""""""""""""" Key Mapping """""""""""""""""""""""""""""""""""""""""""""""
+
+" map ctrl n to toggle nerd tree
+map <C-n> :NERDTreeToggle<CR>
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+"""""""""""""""""""" Shortcuts """""""""""""""""""""""""""""""""""""""""""""""""
+
+" :W sudo saves the file
+" (useful for handling the permission-denied error)
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
