@@ -17,8 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 
 " file tree explorer
-“ https://github.com/preservim/nerdtree
-Plugin ‘preservim/nerdtree’
+" https://github.com/preservim/nerdtree
+Plugin 'preservim/nerdtree'
 
 " https://github.com/preservim/nerdcommenter
 Plugin 'preservim/nerdcommenter'
@@ -66,3 +66,9 @@ set smartcase
 
 " Highlight search results
 set hlsearch
+
+set shortmess+=I " disable startup message
+set nu " number lines
+set rnu " relative line numbering
+set incsearch " incremental search (as string is being typed)
+set hls " highlight search
