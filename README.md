@@ -1,4 +1,4 @@
-# dotfile-vim
+# vimrc
 
 
 
@@ -9,11 +9,14 @@
 #### Set up
 
 1. Clone `Vundle.vim` into  `~/.vim/bundle/`
-```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
+    ```bash
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    ```
 
 2. Launch `vim` and run `:PluginInstall`
+    ```bash
+    vim
+    ```
 
 3. Build `YouCompleteMe`:
     ```bash
