@@ -1,29 +1,41 @@
 # vimrc
 
 
+### Set up
 
-### Vim Plugin Manager
+1. Clone this repo
+    ```bash
+    git clone https://github.com/MarkHershey/vimrc.git
+    ```
+    
+2. Copy `.vimrc` to home folder
+    ```bash
+    cp vimrc/.vimrc ~/.vimrc
+    ```
 
-- [VundleVim / Vundle.vim](https://github.com/VundleVim/Vundle.vim)
-
-#### Set up
-
-1. Clone `Vundle.vim` into  `~/.vim/bundle/`
+3. Clone `Vundle.vim` into  `~/.vim/bundle/`
     ```bash
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     ```
 
-2. Launch `vim` and run `:PluginInstall`
+4. Launch `vim` and run `:PluginInstall`
     ```bash
     vim
     ```
 
-3. Build `YouCompleteMe`:
+5. Build `YouCompleteMe`:
     ```bash
-    sudo apt install build-essential cmake vim python3-dev
+    sudo apt install build-essential cmake vim python3-dev golang-go
     cd ~/.vim/bundle/YouCompleteMe
     python3 install.py --all
     ```
+
+### Vim Plugin Manager
+
+In this `vimrc`, a Vim plugin manager called `Vundle` is used. 
+
+- [VundleVim / Vundle.vim](https://github.com/VundleVim/Vundle.vim)
+
 
 ### Included Vim Plugin
 
