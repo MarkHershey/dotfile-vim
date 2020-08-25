@@ -41,6 +41,9 @@ filetype plugin indent on    " required
 " Disable startup message
 set shortmess+=I
 
+" Set text encoding 
+set encoding=utf-8
+
 " Show line numbers
 set nu
 
